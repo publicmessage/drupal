@@ -1,7 +1,7 @@
 <?php
 
-/* core/themes/classy/templates/field/image-style.html.twig */
-class __TwigTemplate_a89d258dbf80e0eed6b2f475df996d85a9123c4e2eba342160e4746e66756214 extends Twig_Template
+/* core/themes/classy/templates/form/dropbutton-wrapper.html.twig */
+class __TwigTemplate_0b8d28295e359037c24a64d071f2160b54abadd269b058e6590fd6f9a6434cb8 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -15,13 +15,13 @@ class __TwigTemplate_a89d258dbf80e0eed6b2f475df996d85a9123c4e2eba342160e4746e667
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $tags = array();
+        $tags = array("if" => 12, "spaceless" => 13);
         $filters = array();
         $functions = array();
 
         try {
             $this->env->getExtension('sandbox')->checkSecurity(
-                array(),
+                array('if', 'spaceless'),
                 array(),
                 array()
             );
@@ -39,15 +39,28 @@ class __TwigTemplate_a89d258dbf80e0eed6b2f475df996d85a9123c4e2eba342160e4746e667
             throw $e;
         }
 
-        // line 18
-        echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["image"]) ? $context["image"] : null), "html", null, true));
-        echo "
-";
+        // line 12
+        if ((isset($context["children"]) ? $context["children"] : null)) {
+            // line 13
+            echo "  ";
+            ob_start();
+            // line 14
+            echo "    <div class=\"dropbutton-wrapper\">
+      <div class=\"dropbutton-widget\">
+        ";
+            // line 16
+            echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["children"]) ? $context["children"] : null), "html", null, true));
+            echo "
+      </div>
+    </div>
+  ";
+            echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
+        }
     }
 
     public function getTemplateName()
     {
-        return "core/themes/classy/templates/field/image-style.html.twig";
+        return "core/themes/classy/templates/form/dropbutton-wrapper.html.twig";
     }
 
     public function isTraitable()
@@ -57,7 +70,7 @@ class __TwigTemplate_a89d258dbf80e0eed6b2f475df996d85a9123c4e2eba342160e4746e667
 
     public function getDebugInfo()
     {
-        return array (  43 => 18,);
+        return array (  52 => 16,  48 => 14,  45 => 13,  43 => 12,);
     }
 
     public function getSource()
@@ -65,21 +78,23 @@ class __TwigTemplate_a89d258dbf80e0eed6b2f475df996d85a9123c4e2eba342160e4746e667
         return "{#
 /**
  * @file
- * Theme override for an image using a specific image style.
+ * Theme override for a dropbutton wrapper.
  *
  * Available variables:
- * - attributes: HTML attributes for the image, including the following:
- *   - src: Full URL or relative path to the image file.
- *   - class: One or more classes to be applied to the image.
- *   - width: The width of the image (if known).
- *   - height: The height of the image (if known).
- *   - title: The title of the image.
- *   - alt: The alternative text for the image.
+ * - children: Contains the child elements of the dropbutton menu.
  *
- * @see template_preprocess_image_style()
+ * @see template_preprocess()
  */
 #}
-{{ image }}
+{% if children %}
+  {% spaceless %}
+    <div class=\"dropbutton-wrapper\">
+      <div class=\"dropbutton-widget\">
+        {{ children }}
+      </div>
+    </div>
+  {% endspaceless %}
+{% endif %}
 ";
     }
 }

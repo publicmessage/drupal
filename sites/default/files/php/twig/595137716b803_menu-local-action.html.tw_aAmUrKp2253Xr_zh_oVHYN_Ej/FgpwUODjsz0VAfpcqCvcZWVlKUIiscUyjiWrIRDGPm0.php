@@ -1,7 +1,7 @@
 <?php
 
-/* {# inline_template_start #}{{ value|nl2br }} */
-class __TwigTemplate_d3e79bd6029fd1ab1d50dd676e1f6555a2880e7bdc0733b6b806b540b4a45fd4 extends Twig_Template
+/* core/themes/classy/templates/navigation/menu-local-action.html.twig */
+class __TwigTemplate_dfa1e36b2a6edd0a8d87b224a00c58d1aead108c9326aa7a669549ef36f5a00a extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -16,13 +16,13 @@ class __TwigTemplate_d3e79bd6029fd1ab1d50dd676e1f6555a2880e7bdc0733b6b806b540b4a
     protected function doDisplay(array $context, array $blocks = array())
     {
         $tags = array();
-        $filters = array("nl2br" => 1);
+        $filters = array();
         $functions = array();
 
         try {
             $this->env->getExtension('sandbox')->checkSecurity(
                 array(),
-                array('nl2br'),
+                array(),
                 array()
             );
         } catch (Twig_Sandbox_SecurityError $e) {
@@ -39,13 +39,18 @@ class __TwigTemplate_d3e79bd6029fd1ab1d50dd676e1f6555a2880e7bdc0733b6b806b540b4a
             throw $e;
         }
 
-        // line 1
-        echo $this->env->getExtension('sandbox')->ensureToStringAllowed(nl2br($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["value"]) ? $context["value"] : null), "html", null, true)));
+        // line 13
+        echo "<li";
+        echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["attributes"]) ? $context["attributes"] : null), "html", null, true));
+        echo ">";
+        echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["link"]) ? $context["link"] : null), "html", null, true));
+        echo "</li>
+";
     }
 
     public function getTemplateName()
     {
-        return "{# inline_template_start #}{{ value|nl2br }}";
+        return "core/themes/classy/templates/navigation/menu-local-action.html.twig";
     }
 
     public function isTraitable()
@@ -55,11 +60,24 @@ class __TwigTemplate_d3e79bd6029fd1ab1d50dd676e1f6555a2880e7bdc0733b6b806b540b4a
 
     public function getDebugInfo()
     {
-        return array (  43 => 1,);
+        return array (  43 => 13,);
     }
 
     public function getSource()
     {
-        return "{# inline_template_start #}{{ value|nl2br }}";
+        return "{#
+/**
+ * @file
+ * Theme override for a single local action link.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the wrapper element.
+ * - link: A rendered link element.
+ *
+ * @see template_preprocess_menu_local_action()
+ */
+#}
+<li{{ attributes }}>{{ link }}</li>
+";
     }
 }

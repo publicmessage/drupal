@@ -1,32 +1,33 @@
 <?php
 
-/* core/themes/classy/templates/field/field--text-with-summary.html.twig */
-class __TwigTemplate_7114c6950e830f3101fadd9f44c015465b80a07c4e12dff975e66768cb603977 extends Twig_Template
+/* core/themes/seven/templates/block--local-actions-block.html.twig */
+class __TwigTemplate_0385dd7245d5ad13de39ee5402609fe61cfb5fad875616ae05f5f454851296f6 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("field--text.html.twig", "core/themes/classy/templates/field/field--text-with-summary.html.twig", 1);
+        $this->parent = $this->loadTemplate("@block/block.html.twig", "core/themes/seven/templates/block--local-actions-block.html.twig", 1);
         $this->blocks = array(
+            'content' => array($this, 'block_content'),
         );
     }
 
     protected function doGetParent(array $context)
     {
-        return "field--text.html.twig";
+        return "@block/block.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $tags = array();
+        $tags = array("if" => 9);
         $filters = array();
         $functions = array();
 
         try {
             $this->env->getExtension('sandbox')->checkSecurity(
-                array(),
+                array('if'),
                 array(),
                 array()
             );
@@ -47,9 +48,26 @@ class __TwigTemplate_7114c6950e830f3101fadd9f44c015465b80a07c4e12dff975e66768cb6
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
 
+    // line 8
+    public function block_content($context, array $blocks = array())
+    {
+        // line 9
+        echo "  ";
+        if ((isset($context["content"]) ? $context["content"] : null)) {
+            // line 10
+            echo "    <ul class=\"action-links\">
+      ";
+            // line 11
+            echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["content"]) ? $context["content"] : null), "html", null, true));
+            echo "
+    </ul>
+  ";
+        }
+    }
+
     public function getTemplateName()
     {
-        return "core/themes/classy/templates/field/field--text-with-summary.html.twig";
+        return "core/themes/seven/templates/block--local-actions-block.html.twig";
     }
 
     public function isTraitable()
@@ -59,12 +77,25 @@ class __TwigTemplate_7114c6950e830f3101fadd9f44c015465b80a07c4e12dff975e66768cb6
 
     public function getDebugInfo()
     {
-        return array (  11 => 1,);
+        return array (  61 => 11,  58 => 10,  55 => 9,  52 => 8,  11 => 1,);
     }
 
     public function getSource()
     {
-        return "{% extends \"field--text.html.twig\" %}
+        return "{% extends \"@block/block.html.twig\" %}
+{#
+/**
+ * @file
+ * Theme override for local actions (primary admin actions.)
+ */
+#}
+{% block content %}
+  {% if content %}
+    <ul class=\"action-links\">
+      {{ content }}
+    </ul>
+  {% endif %}
+{% endblock %}
 ";
     }
 }
