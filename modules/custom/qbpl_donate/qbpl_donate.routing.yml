@@ -1,0 +1,8 @@
+
+donate.detail: 
+  path: '/donate'
+  defaults: 
+    _controller: '\Drupal\qbpl_Donate\Controller\DonateController::content'
+    _title: 'Please give me money'
+  requirements:
+    _permission: 'access content'

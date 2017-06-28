@@ -1,16 +1,21 @@
 <?php
 
-/* core/themes/stable/templates/admin/system-config-form.html.twig */
-class __TwigTemplate_7bcc6239f65d3a4de9417f993bd03cba5230731b65cf52482afd600b92bbc20b extends Twig_Template
+/* core/themes/classy/templates/field/field--text-with-summary.html.twig */
+class __TwigTemplate_7114c6950e830f3101fadd9f44c015465b80a07c4e12dff975e66768cb603977 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
-        $this->parent = false;
-
+        // line 1
+        $this->parent = $this->loadTemplate("field--text.html.twig", "core/themes/classy/templates/field/field--text-with-summary.html.twig", 1);
         $this->blocks = array(
         );
+    }
+
+    protected function doGetParent(array $context)
+    {
+        return "field--text.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
@@ -39,15 +44,12 @@ class __TwigTemplate_7bcc6239f65d3a4de9417f993bd03cba5230731b65cf52482afd600b92b
             throw $e;
         }
 
-        // line 15
-        echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["form"]) ? $context["form"] : null), "html", null, true));
-        echo "
-";
+        $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
 
     public function getTemplateName()
     {
-        return "core/themes/stable/templates/admin/system-config-form.html.twig";
+        return "core/themes/classy/templates/field/field--text-with-summary.html.twig";
     }
 
     public function isTraitable()
@@ -57,26 +59,12 @@ class __TwigTemplate_7bcc6239f65d3a4de9417f993bd03cba5230731b65cf52482afd600b92b
 
     public function getDebugInfo()
     {
-        return array (  43 => 15,);
+        return array (  11 => 1,);
     }
 
     public function getSource()
     {
-        return "{#
-/**
- * @file
- * Theme override for a system settings form.
- *
- * This template will be used when a system config form specifies 'config_form'
- * as its #theme callback.  Otherwise, by default, system config forms will be
- * themed by form.html.twig. This does not alter the appearance of a form at all,
- * but is provided as a convenience for themers.
- *
- * Available variables:
- * - form: The confirm form.
- */
-#}
-{{ form }}
+        return "{% extends \"field--text.html.twig\" %}
 ";
     }
 }
