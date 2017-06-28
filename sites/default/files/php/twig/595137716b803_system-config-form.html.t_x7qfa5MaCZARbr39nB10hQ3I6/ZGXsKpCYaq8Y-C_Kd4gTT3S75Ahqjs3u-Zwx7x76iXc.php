@@ -1,7 +1,7 @@
 <?php
 
-/* core/themes/classy/templates/form/confirm-form.html.twig */
-class __TwigTemplate_1da01807d0fae85b90a3d15c7a337ca40ce4b5c8ce9c444c6cb36367901ac3a5 extends Twig_Template
+/* core/themes/stable/templates/admin/system-config-form.html.twig */
+class __TwigTemplate_7bcc6239f65d3a4de9417f993bd03cba5230731b65cf52482afd600b92bbc20b extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -39,7 +39,7 @@ class __TwigTemplate_1da01807d0fae85b90a3d15c7a337ca40ce4b5c8ce9c444c6cb36367901
             throw $e;
         }
 
-        // line 13
+        // line 15
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["form"]) ? $context["form"] : null), "html", null, true));
         echo "
 ";
@@ -47,7 +47,7 @@ class __TwigTemplate_1da01807d0fae85b90a3d15c7a337ca40ce4b5c8ce9c444c6cb36367901
 
     public function getTemplateName()
     {
-        return "core/themes/classy/templates/form/confirm-form.html.twig";
+        return "core/themes/stable/templates/admin/system-config-form.html.twig";
     }
 
     public function isTraitable()
@@ -57,7 +57,7 @@ class __TwigTemplate_1da01807d0fae85b90a3d15c7a337ca40ce4b5c8ce9c444c6cb36367901
 
     public function getDebugInfo()
     {
-        return array (  43 => 13,);
+        return array (  43 => 15,);
     }
 
     public function getSource()
@@ -65,9 +65,11 @@ class __TwigTemplate_1da01807d0fae85b90a3d15c7a337ca40ce4b5c8ce9c444c6cb36367901
         return "{#
 /**
  * @file
- * Theme override for confirm form.
+ * Theme override for a system settings form.
  *
- * By default this does not alter the appearance of a form at all,
+ * This template will be used when a system config form specifies 'config_form'
+ * as its #theme callback.  Otherwise, by default, system config forms will be
+ * themed by form.html.twig. This does not alter the appearance of a form at all,
  * but is provided as a convenience for themers.
  *
  * Available variables:
