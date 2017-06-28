@@ -20,7 +20,7 @@ class DonateBlock extends BlockBase {
    */
   public function build() {
     return array(
-      '#markup' => 'Donate, world!',
+      '#markup' => '<a href="/">Donate</a>, world!',
     );
   }
 
