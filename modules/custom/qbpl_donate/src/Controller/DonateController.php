@@ -14,7 +14,7 @@ class DonateController extends ControllerBase {
   public function content() {
     return array(
       '#type' => 'markup',
-      '#markup' => ('Please give me monies!!!!!1'),
+      '#markup' => ('Please give me monies'),
     );
   }
 
