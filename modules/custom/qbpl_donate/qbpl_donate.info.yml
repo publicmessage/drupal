@@ -1,5 +1,0 @@
-name: Donate
-type: module 
-description: This is the module that will ask people to give me money. I like money. 
-core: 8.x
-package: Custom
