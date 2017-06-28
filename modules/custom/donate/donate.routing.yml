@@ -1,4 +1,4 @@
-hello_world.content:
+donate.content:
   path: '/donate'
   defaults:
     _controller: '\Drupal\donate\Controller\DonateController::content'

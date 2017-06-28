@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
     config:
-        - field.field.node.pencil.body
+        - field.field.node.pencil.length
         - node.type.pencil
     module:
         - text
@@ -13,7 +13,7 @@ targetEntityType: node
 bundle: pencil
 mode: default
 content:
-    body:
+    length:
         label: hidden
         type: text_default
         weight: 101
