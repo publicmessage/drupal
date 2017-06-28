@@ -1,0 +1,22 @@
+# field.field.node.pencil.length.yml
+langcode: en
+status: true
+dependencies:
+    config:
+        - field.storage.node.body
+        - node.type.pencil
+    module:
+        - text
+id: node.pencil.length
+field_name: length
+entity_type: node
+bundle: pencil
+label: length
+description: 'Pencils come in different lengths.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+    display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,7 @@
+donate.admin:
+  title: 'Donate module settings'
+  description: 'This is the description text for donation module. The donation module encourages people to donate.'
+  parent: system.admin_config_development
+  route_name: donate.content
+  weight: 100
+  

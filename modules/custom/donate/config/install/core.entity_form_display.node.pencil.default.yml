@@ -1,0 +1,24 @@
+# core.entity_form_display.node.pencil.default.yml
+langcode: en
+status: true
+dependencies:
+    config:
+        - field.field.node.pencil.body
+        - node.type.pencil
+    module:
+        - text
+        - user
+id: node.pencil.default
+targetEntityType: node
+bundle: pencil
+mode: default
+content:
+    body:
+        label: hidden
+        type: text_textarea_with_summary
+        weight: 101
+        settings: {  }
+        third_party_settings: {  }
+    links:
+        weight: 100
+hidden: {  }

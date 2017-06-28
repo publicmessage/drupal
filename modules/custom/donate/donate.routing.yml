@@ -1,0 +1,7 @@
+hello_world.content:
+  path: '/donate'
+  defaults:
+    _controller: '\Drupal\donate\Controller\DonateController::content'
+    _title: 'Please donate'
+  requirements:
+    _permission: 'access content'
