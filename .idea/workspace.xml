@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecbc12ad-2375-4591-8233-475d73e72772" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/custom/donate/src/Controller/DonateController.php" afterPath="$PROJECT_DIR$/modules/custom/donate/src/Controller/DonateController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom/donate/src/Plugin/Block/DonateBlock.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,11 +17,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DonateController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DonateController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/custom/donate/src/Controller/DonateController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
               <caret line="16" column="116" lean-forward="false" selection-start-line="16" selection-start-column="116" selection-end-line="16" selection-end-column="116" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DonateBlock.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/custom/donate/src/Plugin/Block/DonateBlock.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -89,6 +100,7 @@
         <option value="$PROJECT_DIR$/modules/custom/donate/config/install/core.entity_view_display.node.pencil.default.yml" />
         <option value="$PROJECT_DIR$/modules/custom/donate/donate.routing.yml" />
         <option value="$PROJECT_DIR$/modules/custom/donate/src/Controller/DonateController.php" />
+        <option value="$PROJECT_DIR$/modules/custom/donate/src/Plugin/Block/DonateBlock.php" />
       </list>
     </option>
   </component>
@@ -162,7 +174,17 @@
               <item name="custom" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="donate" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Plugin" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="dp8kus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dp8kus" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="custom" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="donate" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Plugin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Block" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -202,12 +224,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1498660441307</updated>
-      <workItem from="1498660443796" duration="4976000" />
+      <workItem from="1498660443796" duration="6632000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4976000" />
+    <option name="totallyTimeSpent" value="6632000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -335,6 +357,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="116" lean-forward="false" selection-start-line="16" selection-start-column="116" selection-end-line="16" selection-end-column="116" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/custom/donate/src/Plugin/Block/DonateBlock.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
