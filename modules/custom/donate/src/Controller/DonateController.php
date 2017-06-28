@@ -14,7 +14,7 @@ class DonateController extends ControllerBase {
   public function content() {
     return array(
       '#type' => 'markup',
-      '#markup' => $this->t('Hello kus!'),
+      '#markup' => 'Please <a href="https://www.eff.org/helpout">donate</a> in whatever way you can. Thank you!</a>',
     );
   }
 
